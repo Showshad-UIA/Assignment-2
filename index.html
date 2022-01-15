@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5466d2d2fc.js" crossorigin="anonymous"></script>
+</head>
+<style>
+ body{
+  background-color:#fff;
+  color:black;
+  font-family:"Raleway", Helvetica, sans-serif;
+  margin:0;
+}
+
+ .container{
+   width:80%;
+   margin: auto;
+   overflow: hidden;
+   margin-bottom: 20px;
+ }
+
+.clr{
+  clear:none;
+}
+
+ #logo{
+   border:3px solid black;
+   padding-left: 10px;
+   padding-right: 10px;
+   float:left;
+   margin-bottom: 10px;
+ }
+
+ #navbar{
+   margin:0;
+   float:right;
+ }
+
+ #navbar ul{
+   padding:0;
+   list-style:none;
+ }
+
+ #navbar li{
+   display:inline-block;
+ }
+
+ #navbar a{
+   color:black;
+   text-decoration:none;
+   font-size:18px;
+   padding-right:15px;
+ }
+
+ /* secondpart */
+ .second-top{
+     display: flex;
+     justify-content:space-evenly;
+ }
+ .info{
+     width: 40%;
+     color: black;
+ }
+ button{
+     border-radius: 10px;
+     background-color: brown;
+     font-size: 1.3em;
+     
+ }
+ .second-top:hover .button{
+     transform: scale(2s);
+     transition: transform 2s ease-in-out delay;
+ }
+ span{
+     margin-left: 10px;
+ }
+ .logo-use{
+     display: flex;
+     justify-content: space-evenly;
+     border: 1px solid pink;
+     margin-left: 10px;
+     margin-top: 100px;
+     flex-wrap: wrap;
+     
+ }
+ .logo img{
+     padding-left: 50px;
+     padding-right: 20px;
+     margin-left: 0;
+ }
+ .additionl-part{
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 50px;
+ }
+ .Footer-part{
+     text-align: center;
+     background-color: black;
+     color: white;
+     
+ }
+ Footer h2{
+     margin-top: 30px;
+ }
+ footer a{
+     
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    padding-right: 15px;
+     
+ }
+ .items{
+    
+     width: 200px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 250px;
+     margin-bottom: 30px;
+     margin-top: 30px;
+     
+ }
+ .item{
+     width: 280px;
+     border: 1px solid gray;
+     box-shadow: 5px 5px gray;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     
+ }
+ .item-detail{
+     margin-left: 3px;
+ }
+ .item .item-banner img{
+     width: 270px;
+     height: 150px;
+     padding-left: 5px;
+     border-radius: 8px;
+     border: gray;
+     padding-left: 2px;
+     margin-top: 5px;
+
+
+ }
+ .heading{
+     text-align: center;
+     margin-top: 80px;
+     font-size:20px;
+ }
+ 
+ .item-info{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+
+ .fa-star.filled{
+     color:#FFC014;
+ }
+ .fa-star.empty{
+     color:#AEAEAE;
+ }
+
+     /* Media Queries */
+     @media only screen and ( max-width: 680px){
+         .items{
+             background-color: indigo;
+         }
+         
+     }
+
+
+</style>
+
+
+<body>
+
+    <div id="main-header">
+      <div class="container">
+        <h1 id="logo">HM<h1>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" target="_blank">Github</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+          </ul>
+        </nav>
+        <div class="clr"></div>
+
+      </div>
+
+    </div>
+
+       <section class="second-top">
+           <div class="info">
+               <h2>Hey everyone</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nulla unde rem, corporis voluptatem iusto enim laudantium quo harum eligendi nobis, illum non obcaecati blanditiis neque, dignissimos molestiae quaerat nam?</p>
+              <button type="submit">Prebook Now<span><a><i class="fas fa-arrow-right"></i></a></span></button>
+           </div>
+           <div class="photo">
+               <img src="images/airpod.png" alt="">
+               
+           </div>
+           </section>
+
+           <!------------------ 
+            Logo Part start
+             --------------------->  
+           
+            </section>
+            <!-- third part -->
+            <section class="logo-use">
+                <div class="logo">
+                    <img src="logos/Alibaba.svg" alt="">
+                    <img src="logos/Amazon.svg" alt="">
+                    <img src="logos/Daraz.pk Logo.svg" alt="">
+                    <img src="logos/Ebay.svg" alt="">
+                    <img src="logos/Target.svg" alt="">
+                    <img src="logos/Walmart.svg" alt="">
+                    <img src="logos/Rakuten.svg" alt="">
+                </div>
+            </section>
+            <!-- third part close -->
+     
+
+           <!------ Grid Part start-->
+
+               <div class="heading">
+                   <h2>Popular Collections</h2>
+               </div>>
+
+               </div>
+        
+           <section class="container ">
+            <h2 class="section-title "> </h2>
+            <div class="items">
+                <div class="item">
+                    <div class="item-banner">
+                        <img src="images/drone.png" alt="">
+                    </div>
+                    <div class="item-detail"></div>
+                    <h3 class="item-title">Flex Triped</h3>
+                    <p>Price: $100</p>
+                    <div class="item-info">
+                        <div>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star empty"></i>
+                        </div>
+                          <p>4.99</p>
+                        </div>
+                        <div>
+                          <p>We have worldwide representive</p>
+                    </div> 
+                </div>
+
+
+                <!------------------>
+
+                <div class="item">
+                    <div class="item-banner">
+                        <img src="images/gear.png" alt="">
+                    </div>
+                    <div class="item-detail"></div>
+                    <h3 class="item-title">Flex Triped</h3>
+                    <p>Price: $100</p>
+                    <div class="item-info">
+                        <div>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star filled"></i>
+                            <i class="fas fa-star fa-star empty"></i>
+                        </div>
+                          <p>4.99</p>
+                        </div>
+                        <div>
+                          <p>We have worldwide representive</p>
+                    </div> 
+                </div>
+                         <!------------------>
+
+                         <div class="item">
+                            <div class="item-banner">
+                                <img src="images/action.png" alt="">
+                            </div>
+                            <div class="item-detail"></div>
+                            <h3 class="item-title">Flex Triped</h3>
+                            <p>Price: $100</p>
+                            <div class="item-info">
+                                <div>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star empty"></i>
+                                </div>
+                                  <p>4.99</p>
+                                </div>
+                                <div>
+                                  <p>We have worldwide representive</p>
+                            </div> 
+                        </div>
+
+
+
+                        <div class="item">
+                            <div class="item-banner">
+                                <img src="images/lights.png" alt="">
+                            </div>
+                            <div class="item-detail"></div>
+                            <h3 class="item-title">Flex Triped</h3>
+                            <p>Price: $100</p>
+                            <div class="item-info">
+                                <div>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star empty"></i>
+                                </div>
+                                  <p>4.99</p>
+                                </div>
+                                <div>
+                                  <p>We have worldwide representive</p>
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="item-banner">
+                                <img src="images/main-camera.png" alt="">
+                            </div>
+                            <div class="item-detail"></div>
+                            <h3 class="item-title">Flex Triped</h3>
+                            <p>Price: $100</p>
+                            <div class="item-info">
+                                <div>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star empty"></i>
+                                </div>
+                                  <p>4.99</p>
+                                </div>
+                                <div>
+                                  <p>We have worldwide representive</p>
+                            </div> 
+                        </div>
+
+                        <div class="item">
+                            <div class="item-banner">
+                                <img src="images/mic.png" alt="">
+                            </div>
+                            <div class="item-detail"></div>
+                            <h3 class="item-title">Flex Triped</h3>
+                            <p>Price: $100</p>
+                            <div class="item-info">
+                                <div>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star empty"></i>
+                                </div>
+                                  <p>4.99</p>
+                                </div>
+                                <div>
+                                  <p>We have worldwide representive</p>
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="item-banner">
+                                <img src="images/setup.png" alt="">
+                            </div>
+                            <div class="item-detail"></div>
+                            <h3 class="item-title">Flex Triped</h3>
+                            <p>Price: $100</p>
+                            <div class="item-info">
+                                <div>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star empty"></i>
+                                </div>
+                                  <p>4.99</p>
+                                </div>
+                                <div>
+                                  <p>We have worldwide representive</p>
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="item-banner">
+                                <img src="images/single-light.png" alt="">
+                            </div>
+                            <div class="item-detail"></div>
+                            <h3 class="item-title">Flex Triped</h3>
+                            <p>Price: $100</p>
+                            <div class="item-info">
+                                <div>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star empty"></i>
+                                </div>
+                                  <p>4.99</p>
+                                </div>
+                                <div>
+                                  <p>We have worldwide representive</p>
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="item-banner">
+                                <img src="images/tripod.png" alt="">
+                            </div>
+                            <div class="item-detail"></div>
+                            <h3 class="item-title">Flex Triped</h3>
+                            <p>Price: $100</p>
+                            <div class="item-info">
+                                <div>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star filled"></i>
+                                    <i class="fas fa-star fa-star empty"></i>
+                                </div>
+                                  <p>4.99</p>
+                                </div>
+                                <div>
+                                  <p>We have worldwide representive</p>
+                            </div> 
+                        </div>
+
+               
+                </div>
+                
+            </div>
+           </section>
+              
+           <!-- No 9 end  -->
+       
+
+       <!-- main part -->
+
+
+       <!-- last part -->
+       <section class="additionl-part">
+           <div class="last">
+               <img src="images/mic.png" alt="">
+           </div>
+           <div class="info">
+               <h1>The feature is awsome</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptates omnis itaque reiciendis odit. Iste, rem corporis. Beatae dolorem vitae officiis  incidunt.</p>
+               <button type="submit">Check baby<span><a><i class="fas fa-arrow-right"></i></a></span></button>
+           </div>
+           </section>
+           <section class="Footer-part">
+           <footer>
+            <h2>Welcome To GFG</h2>
+            <p>Copyright © 2020 influencer products</p>
+            <p>all right reserve</p>
+            
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-skype"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+
+            </ul>
+           </footer>
+       </section>
+
+
+</body>
+</html>
