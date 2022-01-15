@@ -8,7 +8,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  overflow: hidden;
+
   margin-bottom: 20px;
 }
 
@@ -21,7 +21,9 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   float: left;
-  margin-bottom: 10px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 #navbar {
@@ -36,6 +38,7 @@ body {
 
 #navbar li {
   display: inline-block;
+  margin-left: 20px;
 }
 
 #navbar a {
@@ -54,22 +57,34 @@ body {
   width: 40%;
   color: black;
 }
+.contact {
+  width: 30%;
+}
+.photo {
+  border-radius: 50%;
+}
 button {
   border-radius: 10px;
-  background-color: brown;
+  background-color: rgb(236, 24, 24);
   font-size: 1.3em;
+  color: white;
 }
-.second-top:hover .button {
+.items:hover .item {
+  transform: scale(1.3);
+  transition: transform 2s ease-in-out;
+}
+.second-top:hover .photo {
   transform: scale(2s);
-  transition: transform 2s ease-in-out delay;
+  transition: transform 2s ease-in-out;
 }
+
 span {
   margin-left: 10px;
 }
 .logo-use {
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid pink;
+  border: 1px solid white;
   margin-left: 10px;
   margin-top: 100px;
   flex-wrap: wrap;
@@ -78,6 +93,11 @@ span {
   padding-left: 50px;
   padding-right: 20px;
   margin-left: 0;
+}
+.align {
+  float: right;
+  margin-right: 230px;
+  margin-top: -20px;
 }
 .additionl-part {
   display: flex;
@@ -88,10 +108,12 @@ span {
   text-align: center;
   background-color: black;
   color: white;
+  padding-top: 15px;
+  width: 100%;
+  height: 160px;
+  font-size: 14px;
 }
-Footer h2 {
-  margin-top: 30px;
-}
+
 footer a {
   list-style-type: none;
   display: inline-block;
@@ -102,28 +124,35 @@ footer a {
   width: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 250px;
+  grid-column-gap: 170px;
   margin-bottom: 30px;
   margin-top: 30px;
+  margin-left: 15px;
+}
+.item-title {
+  margin-left: 10px;
+}
+.paragraph {
+  margin-left: 8px;
 }
 .item {
   width: 280px;
-  border: 1px solid gray;
-  box-shadow: 5px 5px gray;
   margin-bottom: 10px;
   border-radius: 5px;
+  background-color: #faf9f6;
+  border: 5px solid white;
 }
-.item-detail {
-  margin-left: 3px;
+.item-detail .item-title {
+  padding-left: 3px;
 }
 .item .item-banner img {
-  width: 270px;
+  width: 260px;
   height: 150px;
   padding-left: 5px;
   border-radius: 8px;
   border: gray;
-  padding-left: 2px;
-  margin-top: 5px;
+  padding-left: 9px;
+  margin-top: 7px;
 }
 .heading {
   text-align: center;
@@ -146,7 +175,116 @@ footer a {
 
 /* Media Queries */
 @media only screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+  }
   .items {
-    background-color: indigo;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item {
+    flex-direction: column;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+.calender {
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.month {
+  padding: 40px 25px;
+  width: 100%;
+  background: lightgreen;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 5px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
   }
 }
